@@ -12,5 +12,19 @@ find_package(Eigen REQUIRED)
 find_package(Symforce REQUIRED)
 
 add_executable(test test.cc)
-add_dependencies(test Eigen::Eigen fmt::fmt spdlog::spdlog symforce::gen symforce::cholesky symforce::opt)
-target_link_libraries(test Eigen::Eigen fmt::fmt spdlog::spdlog symforce::gen symforce::cholesky symforce::opt)
+add_dependencies(
+  test
+  Eigen::Eigen
+  fmt::fmt
+  spdlog::spdlog
+  symforce::gen
+  symforce::cholesky
+  symforce::opt)
+target_link_libraries(
+  test
+  Eigen::Eigen
+  fmt::fmt
+  spdlog::spdlog
+  symforce::gen
+  symforce::cholesky
+  symforce::opt)
