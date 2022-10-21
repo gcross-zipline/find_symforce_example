@@ -1,5 +1,5 @@
 #include <symforce/opt/optimizer.h>
-#include <iostring>
+#include <iostream>
 
 int main() {
     return 0;
